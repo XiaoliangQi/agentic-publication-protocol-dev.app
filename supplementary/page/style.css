@@ -164,11 +164,9 @@ figcaption b { color: var(--ink); font-weight: 600; }
 
 .fig-pair {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  align-items: end;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
-@media (max-width: 600px) { .fig-pair { grid-template-columns: 1fr; } }
 
 /* ---------- Talk to this paper ---------- */
 .agent-lead { margin: 0 0 18px; }
