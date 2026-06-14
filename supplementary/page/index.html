@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Publication Protocol</title>
+  <meta name="description" content="Agentic Publication Protocol (APP): a lightweight repository-and-release format that publishes a paper together with its code, data, environment, and an agent-facing AGENTS.md, so future readers can interact with a faithful paper agent.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agentic Publication Protocol: An Attempt to Modernize Scientific Publication">
+  <meta property="og:description" content="A repository format that publishes not only knowledge, but operational know-how — paper, code, data, environment, and a faithful paper agent.">
+  <meta property="og:image" content="assets/video/poster.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Agentic Publication Protocol</h1>
+  <p class="subtitle">An Attempt to Modernize Scientific Publication</p>
+
+  <p class="authors">
+    Sirui Lu<sup>1,2</sup>
+    &nbsp;&nbsp;
+    <a href="mailto:xlqi@stanford.edu">Xiao-Liang Qi</a><sup>3</sup>
+  </p>
+  <p class="affiliations">
+    <sup>1</sup>Max-Planck-Institut f&uuml;r Quantenoptik &nbsp;·&nbsp;
+    <sup>2</sup>Munich Center for Quantum Science and Technology (MCQST) &nbsp;·&nbsp;
+    <sup>3</sup>Leinweber Institute for Theoretical Physics, Stanford University
+  </p>
+
+  <nav class="links">
+    <a href="https://github.com/XiaoliangQi/agentic-publication-protocol-dev.app/blob/v1.0.0/paper/app-paper.pdf">Paper</a>
+    <a href="https://github.com/XiaoliangQi/agentic-publication-protocol-dev.app">Code</a>
+    <a href="https://github.com/LionSR/AgenticPublicationProtocol">Protocol</a>
+    <a href="https://huggingface.co/datasets/phynics/agentic-publication-protocol-dataset">Data</a>
+    <a href="https://github.com/XiaoliangQi/agentic-publication-protocol-dev.app">Paper Agent</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero video -->
+  <div class="wrap hero">
+    <div class="video-frame">
+      <video controls preload="metadata" poster="assets/video/poster.png">
+        <source src="assets/video/app-promo.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+        <a href="assets/video/app-promo.mp4">Download the overview video.</a>
+      </video>
+    </div>
+    <p class="media-note">Overview video.</p>
+  </div>
+
+  <!-- Abstract -->
+  <section id="abstract" class="wrap">
+    <h2>Abstract</h2>
+    <p>
+      Scientific publication is still organized primarily around static manuscripts,
+      even though much of scientific progress depends on tacit know-how: how to run
+      code, reproduce figures, interpret edge cases, choose useful follow-up
+      directions, and avoid failed paths. Large language model agents create an
+      opportunity to publish not only knowledge, but also operational know-how in a
+      form that future readers and researchers can directly use. This paper outlines
+      the Agentic Publication Protocol (APP), a lightweight repository format for
+      packaging a paper together with code, data, environment information,
+      reproducibility instructions, and an agent-facing instruction file. APP treats a
+      version-controlled repository as the publication object and uses
+      <code>AGENTS.md</code> and optional skills to define a paper agent that can
+      explain the work, reproduce key results when possible, and support follow-up
+      research. We describe the design principles and details of the protocol, the
+      agent skills useful for publishing papers under it, and development tools for
+      evaluating and improving the protocol and associated skills. We close with a
+      broader discussion of the future of scientific research in the agent era.
+    </p>
+  </section>
+
+  <!-- Talk to this paper -->
+  <section id="agent" class="wrap">
+    <h2>Talk to This Paper</h2>
+    <p class="agent-lead">
+      This paper ships with an AI agent. Clone the repository and open it in an AI
+      coding agent: it loads <code>AGENTS.md</code>, explains the work, reproduces key
+      results when possible, and helps you build on it — using the included paper,
+      code, and data as ground truth.
+    </p>
+    <div class="cite-wrap">
+      <button class="copy-btn" type="button" data-copy="run">Copy</button>
+<pre id="run" class="codeblock"><span class="c"># 1 — clone the publication repository</span>
+git clone https://github.com/XiaoliangQi/agentic-publication-protocol-dev.app
+cd agentic-publication-protocol-dev.app
+
+<span class="c"># 2 — open the repo in ONE coding agent of your choice; it loads AGENTS.md:</span>
+<span class="c">#       claude   →  Claude Code</span>
+<span class="c">#       codex    →  Codex</span></pre>
+    </div>
+  </section>
+
+  <!-- Contributions -->
+  <section id="contributions" class="wrap">
+    <h2>Contributions</h2>
+    <ul class="contributions">
+      <li>
+        A lightweight repository-and-release format that publishes a paper together
+        with its code, data, environment, reproduction instructions, and an
+        agent-facing <code>AGENTS.md</code>.
+      </li>
+      <li>
+        A clean separation between the stable publication object — the repository and
+        its tagged release — and the optional skills used to create, validate, and
+        release it.
+      </li>
+      <li>
+        A controlled <code>compare-app</code> evaluation in which the APP paper agent
+        outperforms a general repository-aware agent on all eleven public papers
+        (mean 9.25 vs. 8.50), with its clearest gains in grounding and honesty.
+      </li>
+    </ul>
+  </section>
+
+  <!-- The protocol -->
+  <section id="protocol" class="wrap">
+    <h2>The Protocol</h2>
+    <p>
+      An APP publication is a version-controlled repository, fixed by a release tag,
+      that bundles the paper with its code, data, environment, and an agent-facing
+      <code>AGENTS.md</code>. A clear split keeps the authoritative ground truth
+      separate from optional auxiliary material.
+    </p>
+    <figure>
+      <img src="assets/figures/publication-repo-structure.png"
+           alt="Structure of an APP publication repository">
+      <figcaption>
+        <b>Figure 1.</b> Structure of an APP publication: the paper and human-facing
+        documentation, agent-facing instructions, and the optional code, data,
+        environment, supplementary material, and skills that make the work usable as
+        an agent-readable publication object.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Workflow -->
+  <section id="workflow" class="wrap">
+    <h2>Publishing Workflow</h2>
+    <p>
+      Optional skills guide an author from a working paper repository to a validated,
+      tagged release. The <code>publish-paper</code> metaskill decomposes the process
+      into focused steps: reproduce results, prepare staging, define the paper agent,
+      validate, and release.
+    </p>
+    <figure>
+      <div class="fig-pair">
+        <img src="assets/figures/publish_workflow.png"
+             alt="Overall APP publication workflow">
+        <img src="assets/figures/publish_paper_steps.png"
+             alt="The publish-paper metaskill and its step skills">
+      </div>
+      <figcaption>
+        <b>Figure 2.</b> The publication workflow supported by APP skills.
+        <i>Left:</i> from a working paper repository to a validated APP release.
+        <i>Right:</i> the <code>publish-paper</code> metaskill and its step-specific
+        skills.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Evaluation -->
+  <section id="evaluation" class="wrap">
+    <h2>Evaluation</h2>
+    <p>
+      In the controlled <code>compare-app</code> benchmark, a neutral evaluator scores
+      an APP paper agent against a general repository-aware agent on the same reader
+      questions. On the eleven public papers the APP agent wins every paper, averaging
+      9.25 versus 8.50 overall, with its largest margins on grounding and honesty.
+    </p>
+    <figure class="bordered">
+      <img src="assets/figures/compare_app_average_aspects.png"
+           alt="Average compare-app aspect scores over 11 public papers">
+      <figcaption>
+        <b>Figure 3.</b> Average <code>compare-app</code> aspect scores over the eleven
+        public papers, for accuracy, informativeness, grounding, and honesty (neutral
+        evaluator: Codex, <code>gpt-5.5</code>, reasoning effort <code>xhigh</code>).
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Outlook -->
+  <section id="outlook" class="wrap">
+    <h2>Outlook</h2>
+    <p>
+      Beyond a single paper, agentic publication may change the shape of the research
+      network itself: paper agents that not only explain finished work, but also
+      propose and pursue follow-up directions through interaction.
+    </p>
+    <figure class="bordered">
+      <img src="assets/figures/research_network.png"
+           alt="Schematic of the research network under agentification">
+      <figcaption>
+        <b>Figure 4.</b> A schematic of how agentification may change the research
+        network. Each node is a research work and directed links point forward in time.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- Citation -->
+  <section id="citation" class="wrap">
+    <h2>Citation</h2>
+    <div class="cite-wrap">
+      <button class="copy-btn" type="button" data-copy="bibtex">Copy</button>
+<pre id="bibtex" class="codeblock">@article{lu2026agenticpublicationprotocol,
+  title={Agentic Publication Protocol: An Attempt to Modernize Scientific Publication},
+  author={Lu, Sirui and Qi, Xiao-Liang},
+  year={2026},
+  url={https://github.com/XiaoliangQi/agentic-publication-protocol-dev.app}
+}</pre>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Published with the
+      <a href="https://github.com/LionSR/AgenticPublicationProtocol">Agentic Publication Protocol</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.copy-btn[data-copy]');
+    Array.prototype.forEach.call(buttons, function (btn) {
+      var src = document.getElementById(btn.getAttribute('data-copy'));
+      if (!src) return;
+      btn.addEventListener('click', function () {
+        function done() {
+          btn.textContent = 'Copied';
+          btn.classList.add('copied');
+          setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+        }
+        var text = src.textContent;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else { fallback(); }
+        function fallback() {
+          var r = document.createRange(); r.selectNode(src);
+          var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          sel.removeAllRanges();
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

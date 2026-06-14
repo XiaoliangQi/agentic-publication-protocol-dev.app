@@ -1,0 +1,241 @@
+/* Agentic Publication Protocol — project page
+   Restrained academic style: typographic, monochrome, no ornament. */
+
+:root {
+  --ink: #16191d;
+  --body: #24282d;
+  --muted: #6b7178;
+  --faint: #9aa0a6;
+  --link: #34507e;          /* muted academic blue */
+  --link-hover: #1f3a66;
+  --btn: #25292e;
+  --btn-hover: #15181c;
+  --rule: #e7e9ec;
+  --box: #f6f7f8;
+  --serif: "Charter", "Georgia", "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --mono: "SF Mono", "JetBrains Mono", "Menlo", "Consolas", monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--body);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ---------- Header ---------- */
+header { padding: 80px 0 0; text-align: center; }
+
+h1 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
+  margin: 0;
+  color: var(--ink);
+}
+.subtitle {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 1.12rem;
+  color: var(--muted);
+  margin: 10px 0 28px;
+}
+
+.authors {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+.authors a { color: var(--ink); }
+.authors a:hover { color: var(--link); }
+.authors sup { color: var(--faint); font-weight: 400; font-size: 0.7em; }
+
+.affiliations {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.55;
+}
+.affiliations sup { color: var(--faint); }
+
+/* ---------- Link row ---------- */
+nav.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+  margin: 30px 0 8px;
+}
+nav.links a {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: var(--btn);
+  padding: 8px 17px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+nav.links a:hover { background: var(--btn-hover); color: #fff; text-decoration: none; }
+
+/* ---------- Hero video ---------- */
+.hero { padding: 44px 0 8px; }
+.video-frame {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+.video-frame video { display: block; width: 100%; height: auto; }
+.media-note {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  margin: 12px 0 0;
+}
+
+/* ---------- Sections ---------- */
+section { padding: 44px 0 8px; }
+
+h2 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+p { margin: 0 0 1.1em; }
+
+#abstract p { text-align: justify; hyphens: auto; }
+
+/* ---------- Contributions ---------- */
+.contributions {
+  margin: 0;
+  padding-left: 1.25em;
+}
+.contributions li { margin: 0 0 0.7em; padding-left: 0.25em; }
+.contributions li::marker { color: var(--faint); }
+
+/* ---------- Figures ---------- */
+figure { margin: 0 0 38px; }
+figure:last-of-type { margin-bottom: 8px; }
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+}
+figure.bordered img { border: 1px solid var(--rule); border-radius: 4px; }
+figcaption {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin-top: 14px;
+  text-align: left;
+}
+figcaption b { color: var(--ink); font-weight: 600; }
+
+.fig-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: end;
+}
+@media (max-width: 600px) { .fig-pair { grid-template-columns: 1fr; } }
+
+/* ---------- Talk to this paper ---------- */
+.agent-lead { margin: 0 0 18px; }
+.codeblock-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 0 0 8px;
+}
+.codeblock-label:not(:first-of-type) { margin-top: 20px; }
+
+/* ---------- Code / citation blocks ---------- */
+.cite-wrap { position: relative; }
+.codeblock {
+  background: var(--box);
+  border: 1px solid var(--rule);
+  color: #2a2e33;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  padding: 20px 18px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 0;
+}
+.codeblock .c { color: var(--faint); }
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  padding: 5px 11px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.copy-btn:hover { color: var(--ink); border-color: var(--faint); }
+.copy-btn.copied { color: #2f7d4f; border-color: #bcdcc6; }
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 28px;
+  border-top: 1px solid var(--rule);
+  padding: 28px 0 64px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: center;
+}
+footer p { margin: 0 auto; max-width: 580px; }
+footer code {
+  font-family: var(--mono);
+  font-size: 0.82em;
+  color: var(--ink);
+}
+
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  h1 { font-size: 1.6rem; }
+  header { padding-top: 52px; }
+}
