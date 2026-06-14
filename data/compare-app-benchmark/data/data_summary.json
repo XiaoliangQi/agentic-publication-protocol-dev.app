@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "description": "Compare-app per-paper evaluation scores used to plot average aspect scores.",
+  "source": {
+    "input_records": "https://huggingface.co/datasets/phynics/agentic-publication-protocol-dataset/blob/main/compare-app-benchmark/data/compare_app.jsonl",
+    "run_tag": null
+  },
+  "aspects": [
+    "accuracy",
+    "informativeness",
+    "grounding",
+    "honesty"
+  ],
+  "papers": [
+    {
+      "slug": "attention-tomography",
+      "arxiv_id": "2006.12469",
+      "cite_key": "cha2020attention",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 10,
+        "honesty": 10
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 8
+      },
+      "paper_agent_avg": 9.5,
+      "general_agent_avg": 8.75,
+      "result": "APP"
+    },
+    {
+      "slug": "balloon-qnet",
+      "arxiv_id": "2412.03356",
+      "cite_key": "karakosta2024freespace",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "paper-agent",
+        "Agent B": "general-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 10,
+        "grounding": 8,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 8,
+        "grounding": 9,
+        "honesty": 8
+      },
+      "paper_agent_avg": 9.0,
+      "general_agent_avg": 8.5,
+      "result": "APP"
+    },
+    {
+      "slug": "circuit-cutting-mlft",
+      "arxiv_id": "2005.12702",
+      "cite_key": "perlin2020circuit",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 8,
+        "informativeness": 8,
+        "grounding": 8,
+        "honesty": 8
+      },
+      "paper_agent_avg": 9.0,
+      "general_agent_avg": 8.0,
+      "result": "APP"
+    },
+    {
+      "slug": "fermion-entanglement",
+      "arxiv_id": "1703.10587",
+      "cite_key": "barghathi2017particle",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "paper-agent",
+        "Agent B": "general-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 8,
+        "grounding": 8,
+        "honesty": 8
+      },
+      "paper_agent_avg": 9.0,
+      "general_agent_avg": 8.25,
+      "result": "APP"
+    },
+    {
+      "slug": "mbr-states",
+      "arxiv_id": "2411.03110",
+      "cite_key": "perezsalinas2024multiple",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 10,
+        "grounding": 10,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "paper_agent_avg": 9.5,
+      "general_agent_avg": 9.0,
+      "result": "APP"
+    },
+    {
+      "slug": "metrology-hierarchy",
+      "arxiv_id": "2203.09758",
+      "cite_key": "liu2022optimal",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 10,
+        "grounding": 10,
+        "honesty": 10
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 8,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "paper_agent_avg": 9.75,
+      "general_agent_avg": 8.75,
+      "result": "APP"
+    },
+    {
+      "slug": "oam-gkp-metrology",
+      "arxiv_id": "2605.13271",
+      "cite_key": "kumar2026oam",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 10,
+        "honesty": 10
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "paper_agent_avg": 9.5,
+      "general_agent_avg": 9.0,
+      "result": "APP"
+    },
+    {
+      "slug": "qfi-certification",
+      "arxiv_id": "2306.12711",
+      "cite_key": "mullerrigat2023certifying",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 10,
+        "honesty": 10
+      },
+      "general_agent_scores": {
+        "accuracy": 8,
+        "informativeness": 8,
+        "grounding": 8,
+        "honesty": 8
+      },
+      "paper_agent_avg": 9.5,
+      "general_agent_avg": 8.0,
+      "result": "APP"
+    },
+    {
+      "slug": "qpsq-learning",
+      "arxiv_id": "2310.02075",
+      "cite_key": "wadhwa2023learning",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "paper-agent",
+        "Agent B": "general-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 8,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 8,
+        "grounding": 8,
+        "honesty": 9
+      },
+      "paper_agent_avg": 8.75,
+      "general_agent_avg": 8.5,
+      "result": "APP"
+    },
+    {
+      "slug": "spinchain-entanglement",
+      "arxiv_id": "2007.06989",
+      "cite_key": "sokolov2020emergent",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "paper-agent",
+        "Agent B": "general-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 10,
+        "honesty": 10
+      },
+      "general_agent_scores": {
+        "accuracy": 9,
+        "informativeness": 9,
+        "grounding": 8,
+        "honesty": 9
+      },
+      "paper_agent_avg": 9.5,
+      "general_agent_avg": 8.75,
+      "result": "APP"
+    },
+    {
+      "slug": "topological-floquet",
+      "arxiv_id": "2012.01459",
+      "cite_key": "malz2020topological",
+      "artifact_dir": "not included in this publication; see the Hugging Face dataset for full benchmark records",
+      "evaluator_label_mapping": {
+        "Agent A": "general-agent",
+        "Agent B": "paper-agent"
+      },
+      "paper_agent_scores": {
+        "accuracy": 8,
+        "informativeness": 9,
+        "grounding": 9,
+        "honesty": 9
+      },
+      "general_agent_scores": {
+        "accuracy": 8,
+        "informativeness": 8,
+        "grounding": 8,
+        "honesty": 8
+      },
+      "paper_agent_avg": 8.75,
+      "general_agent_avg": 8.0,
+      "result": "APP"
+    }
+  ]
+}

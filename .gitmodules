@@ -1,0 +1,3 @@
+[submodule "code/protocol_repo"]
+	path = code/protocol_repo
+	url = git@github.com:LionSR/AgenticPublicationProtocol.git

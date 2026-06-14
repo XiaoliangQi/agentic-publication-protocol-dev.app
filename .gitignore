@@ -1,0 +1,12 @@
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+.DS_Store
+.venv/
+node_modules/
+working/
+code/figure-reproduction/generated/

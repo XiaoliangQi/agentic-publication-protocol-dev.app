@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="publish-workflow" id="publish-workflow">
+    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;Working folder&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;finished paper, code, data, notes&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f9d4b8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="10" width="210" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Previous version&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;optional: previous APP release&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#e8c2ea;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="116" width="210" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;Staging&lt;/b&gt;&lt;br/&gt;&lt;font face='Courier New' style='font-size:14px;'&gt;publication-staging/&lt;/font&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;materials to publish and the prompt to agents&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f7f2a8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="310" y="40" width="250" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;Publication&lt;/b&gt;&lt;br/&gt;&lt;font face='Courier New' style='font-size:14px;'&gt;publication repo&lt;/font&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;tagged release, opened by readers with an agent&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#cce9d0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="250" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="172" />
+              <mxPoint x="485" y="172" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="prepare" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="222" y="14" width="76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="publish" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="572" y="58" width="76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="validate" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=2;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="397" y="176" width="76" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="&lt;b&gt;&lt;font face='Courier New'&gt;publish-paper&lt;/font&gt; workflow&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=19;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="-44" width="500" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="auto-improvement" id="auto-improvement">
+    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;Automatic APP evaluation and improvement loop&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=19;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="900" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;i&gt;example discovery is one-time; protocol improvement is an iterative comparison loop&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="28" width="900" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;font style='font-size:13px;'&gt;&lt;b&gt;ONE-TIME INPUT&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;b&gt;&lt;font face='Courier New' style='font-size:15px;'&gt;find-reproducible-papers&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:14px;'&gt;curate papers for protocol evaluation&lt;/font&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#f9d4b8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="80" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;font style='font-size:13px;'&gt;&lt;b&gt;1 &amp;#183; REBUILD STAGING&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;b&gt;&lt;font face='Courier New' style='font-size:16px;'&gt;improve-app&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:14px;'&gt;simulated author plus publishing agent&lt;/font&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#f7f2a8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="80" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;font style='font-size:13px;'&gt;&lt;b&gt;2 &amp;#183; COMPARE AND EVALUATE&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;b&gt;&lt;font face='Courier New' style='font-size:16px;'&gt;compare-app&lt;/font&gt;&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:14px;'&gt;same reader questions, anonymized scoring&lt;/font&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#c9e5f8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="80" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;font style='font-size:13px;'&gt;&lt;b&gt;3 &amp;#183; DIAGNOSE GAPS&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;b&gt;evaluation report&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:14px;'&gt;missing anchors, generic answers, blockers&lt;/font&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#f6c6cd;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="280" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;font style='font-size:13px;'&gt;&lt;b&gt;4 &amp;#183; REVISE PROTOCOL&lt;/b&gt;&lt;/font&gt;&lt;br/&gt;&lt;b&gt;templates and skills&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:14px;'&gt;update AGENTS, checks, staging requirements&lt;/font&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#cce9d0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="280" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="&lt;i&gt;example set&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="&lt;i&gt;staged publication&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=top;fontSize=14;fontColor=#000000;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="570" y="92" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="&lt;i&gt;scored report&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="790" y="222" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="&lt;i&gt;diagnosis&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="572" y="340" width="86" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="&lt;i&gt;rerun same examples&lt;/i&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="464" y="222" width="150" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

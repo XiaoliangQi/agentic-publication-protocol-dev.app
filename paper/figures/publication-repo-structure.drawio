@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="repo-structure" id="repo-structure">
+    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="publication repo" style="rounded=1;arcSize=4;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.5;verticalAlign=top;spacingTop=4;fontFamily=Courier New;fontSize=18;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="780" height="305" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;AGENTS.md, CLAUDE.md&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;canonical instructions for agents&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#c9e5f8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="36" y="40" width="260" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;README.md&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;human entry point&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#c9e5f8;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="180" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;LICENSE&lt;/b&gt;&lt;br/&gt;&lt;font style='font-size:13px;'&gt;usage terms&lt;/font&gt;" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#c9ece6;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="40" width="150" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="ground truth" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#f9d4b8;strokeColor=#000000;verticalAlign=top;spacingTop=4;fontFamily=Courier New;fontSize=17;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="36" y="130" width="410" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="paper/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="58" y="164" width="170" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="data/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="246" y="164" width="170" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="code/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="58" y="216" width="170" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="environment/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="246" y="216" width="170" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="optional" style="rounded=1;arcSize=6;html=1;whiteSpace=wrap;fillColor=#e8c2ea;strokeColor=#000000;verticalAlign=top;spacingTop=4;fontFamily=Courier New;fontSize=17;fontStyle=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="skills/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="515" y="164" width="200" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="supplementary/" style="rounded=1;arcSize=10;html=1;whiteSpace=wrap;fillColor=#f0f0f0;strokeColor=#000000;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="515" y="216" width="200" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.254;exitY=0;exitDx=0;exitDy=0;entryX=0.4;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.78;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="112" />
+              <mxPoint x="239" y="112" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="&lt;b&gt;Canonical structure of an APP publication repo&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=19;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="0" y="-46" width="640" height="32" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
