@@ -60,11 +60,16 @@ S{\'e}bastien Bubeck, Christian Coester, Ronen Eldan, et~al.
 \newblock URL \url{https://arxiv.org/abs/2511.16072}.
 \newblock arXiv:2511.16072.
 
-\bibitem[Lu et~al.(2025)Lu, Jin, Zhang, et~al.]{lu2025theoreticalphysics}
-Sirui Lu, Zhijing Jin, Terry~Jingchen Zhang, et~al.
-\newblock Can theoretical physics research benefit from language agents?, 2025.
+\bibitem[Lu et~al.(2026)Lu, Jin, Zhang, Kos, Cirac, and
+  Sch\"olkopf]{lu2025theoreticalphysics}
+Sirui Lu, Zhijing Jin, Terry~Jingchen Zhang, Pavel Kos, J.~Ignacio Cirac, and
+  Bernhard Sch\"olkopf.
+\newblock Position: {LLM} for physics research requires domain-specialized
+  training and tooling.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine
+  Learning (ICML)}, Seoul, South Korea, 2026.
+\newblock \doi{10.48550/arXiv.2506.06214}.
 \newblock URL \url{https://arxiv.org/abs/2506.06214}.
-\newblock arXiv:2506.06214.
 
 \bibitem[Boiko et~al.(2023)Boiko, MacKnight, Kline, and
   Gomes]{boiko2023coscientist}
