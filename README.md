@@ -14,9 +14,9 @@ reproduce, and build on the work.
 
 ## Overview Video
 
-[![APP overview video](supplementary/promo-video/out/thumbnail.png)](supplementary/promo-video/out/app-promo.mp4)
+[![APP overview video](supplementary/promo-video/out/thumbnail.png)](https://youtu.be/KJ7UGFzRen4)
 
-Video file: `supplementary/promo-video/out/app-promo.mp4`
+▶ **[Watch on YouTube](https://youtu.be/KJ7UGFzRen4)** &nbsp;·&nbsp; local copy: `supplementary/promo-video/out/app-promo.mp4`
 
 ## Talk To This Paper
 
